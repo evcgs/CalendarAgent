@@ -1,0 +1,26 @@
+{
+  "id": "calendar-agent",
+  "name": "日历管理智能体",
+  "version": "1.0.0",
+  "description": "智能日历管理助手，支持日程安排、会议预约、提醒、日历同步等功能",
+  "author": "OpenClaw社区",
+  "categories": ["智能体", "办公效率", "时间管理"],
+  "keywords": ["日历", "日程", "会议", "提醒", "时间管理"],
+  "requirements": {
+    "openclaw": ">=1.0.0",
+    "node": ">=16.0.0"
+  },
+  "permissions": [
+    "calendar:read",
+    "calendar:write",
+    "message:send",
+    "nodes:notify"
+  ],
+  "install": {
+    "steps": [
+      "npm install"
+    ]
+  },
+  "homepage": "https://github.com/evcgs/calendar-agent",
+  "repository": "https://github.com/evcgs/calendar-agent.git"
+}

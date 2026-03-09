@@ -1,0 +1,31 @@
+{
+  "testCases": [
+    {
+      "name": "日程创建测试",
+      "type": "integration",
+      "input": "明天下午2点安排一个项目评审会，参会人：产品、研发、测试，时长2小时",
+      "expectedOutput": {
+        "success": true,
+        "contains": ["日程创建成功", "明天下午2点", "项目评审会"]
+      }
+    },
+    {
+      "name": "日程查询测试",
+      "type": "integration",
+      "input": "查看本周所有的会议安排",
+      "expectedOutput": {
+        "success": true,
+        "contains": ["本周会议", "日期", "时间", "主题"]
+      }
+    },
+    {
+      "name": "提醒设置测试",
+      "type": "integration",
+      "input": "明天上午10点提醒我提交周报",
+      "expectedOutput": {
+        "success": true,
+        "contains": ["提醒设置成功", "明天上午10点", "提交周报"]
+      }
+    }
+  ]
+}
